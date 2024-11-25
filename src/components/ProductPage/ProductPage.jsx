@@ -10,6 +10,8 @@ import { RenderCard } from '../RenderCard'
 import { Carousel } from 'antd'
 import { Alerted } from '../Alert/Alerted'
 import AntModal from '../AntModal/AntModal'
+import AntRate from '../AntRate/AntRate'
+import AntCar from '../AntCarousel/AntCarousel'
 
 // const newData = products.flatMap(item => item.ingredients).filter(Boolean)
 
@@ -258,11 +260,25 @@ console.log(additionalIngredients)
 
 
       <Header />
+ 
 
-        <img className="product-page-img" src={product.image} alt=""/>
-      
+     
+
+
+
+      {/* <AntCar></AntCar> */}
      
        <div className="product-page-wrapper">
+
+
+       <img className="product-page-img" src={product.image} alt=""/>
+
+      
+
+      
+
+
+
           <h2 className="product-page-name">{product.itemName} </h2>
 
           <p className="product-page-description">{product.description}</p>
@@ -280,7 +296,7 @@ console.log(additionalIngredients)
             fontWeight: "bolder",
             padding: "5px",
             
-          }}>{totalCounter}</span> гр. </p>
+          }}>{totalCounter}</span> <span>гр.</span>  </p>
 
           {product.addIngredients && 
             <p className='total'> {product.itemName === "Ромовая баба" ? "выход сиропа:" : "выход начинки:"}  <span style={{
@@ -374,6 +390,8 @@ console.log(additionalIngredients)
 
         
         </div>
+        
+        {/* <AntRate></AntRate> */}
 
         <AntModal data={product}></AntModal>
 

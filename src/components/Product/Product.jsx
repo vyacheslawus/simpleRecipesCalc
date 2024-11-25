@@ -7,6 +7,14 @@ import { ExternalLink } from 'lucide-react'
 
 export const Product = ({ item, index, recipe, setRecipe }) => {
 
+  function truncate(str, maxlength) {
+    if (str.length > maxlength) {
+        return str.slice(0, maxlength) + '...';
+    } else {
+      return str
+    }
+}
+
   const nav = useNavigate()
 
   return (
@@ -19,8 +27,7 @@ export const Product = ({ item, index, recipe, setRecipe }) => {
       <div id={item.id} className="card-body" onClick={() => { nav(`/product/${item.id}`)}}>
 
 
-
-        <img
+<img
           style={{
 
             marginRight: "5px"
@@ -32,16 +39,24 @@ export const Product = ({ item, index, recipe, setRecipe }) => {
           height="100" />
           
 
-         <div style={{
+         {/* <div style={{
           dispaly: "flex",
           flexDirection: "column"
          }}>
+
+    </div> */}
+    <div style={{
+      dispaly: "flex",
+      flexDirection: "column",
+      justifyContent: "flex-start"
+      // paddingLeft: "20px"
+      
+    }}>
         <h2 className="card-name">{item.itemName}</h2>
-        {/* <span style={{
-          fontSize: "10px"
-        }}>{item.description}</span> */}
+
+       
+        <div className="card-description"> <span className='card-desc' >{truncate(item.description, 35) }</span></div>
         </div>
-        {/* <p className="card-description">{item.description}</p> */}
       </div>
 
       {/* <Button

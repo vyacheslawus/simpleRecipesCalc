@@ -2,8 +2,7 @@
 
 export const RenderCard = ({ product, addProduct, changeColor, changeColorTitles }) => {
   let total = 0;
-console.log(product); 
-console.log(addProduct);
+
 return (
     <>
       {product?.map((item, index) => {
@@ -35,7 +34,8 @@ return (
                   {item.amount && (
                     <p style={changeColor}>{item.amount} </p>
                   )}
-                  <span> гр.</span>
+                 
+                 <span>гр.</span>
                 </div>
               </div>
             </li>
@@ -73,7 +73,7 @@ return (
        {item.amount && (
          <p style={changeColor}>{item.amount} </p>
        )}
-       <span> гр.</span>
+       <span> {item.name === "sosiski" ? "шт." : "гр."}</span>
      </div>
    </div>
  </li>

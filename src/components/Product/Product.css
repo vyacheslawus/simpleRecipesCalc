@@ -31,4 +31,16 @@
 
 .card-name {
   font-size: 14px;
+  padding: 0;
+}
+
+.card-description {
+  font-size: 10px;
+  margin-left: 15px;
+  padding: 0;
+  line-height: 15px;
+}
+
+.card-desc {
+  /* font-size: 12px; */
 }

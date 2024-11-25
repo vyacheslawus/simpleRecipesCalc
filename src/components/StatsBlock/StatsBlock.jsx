@@ -14,11 +14,11 @@ let bread = 0;
 
 
     products.forEach(item => {
-        if (item.category === "bread") {
+        if (item.type === "bake") {
             bread += 1;
         }
         
-        if (item.category === "pie") {
+        if (item.type === "pastry") {
             cakes += 1;
         }
     })

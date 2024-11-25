@@ -8,6 +8,7 @@ export const products = [
     "image2": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShTmstdhHxcUlwsKVDpzYvlbxFBBrp1BjiIg&usqp=CAU",
     "image3": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0pR9lYrLL6foi2hJVTthl0imMjSe06TGHCw&usqp=CAU",
     "id": 0,
+    "type": "bake",
     "ingredients": [
       {
         "doughTitle": "Тесто: "
@@ -51,6 +52,7 @@ export const products = [
     "image": "https://calorizator.ru/sites/default/files/imagecache/product_512/product/bread-93.jpg",
     "image2": "https://lesaffre.ru/wp-content/uploads/2020/04/Darniczkij_podovyj.jpg",
     "id": 1,
+    "type": "bake",
     "ingredients": [
       {
         "doughTitle": "Тесто: "
@@ -128,7 +130,8 @@ export const products = [
       },
 
     ],
-    "category": "croissants"
+    "category": "croissants",
+    type: "bake",
 
   },
   {
@@ -136,6 +139,7 @@ export const products = [
     "description": "Французский круассан особой рецептуры на сливочном масле",
     "image": "https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_6560e721dc9c9160243429f5_6560ec021579133d0f5db7ab/scale_1200",
     "id": 3,
+    "type": "bake",
     "ingredients": [
       {
         "doughTitle": "Тесто: "
@@ -210,7 +214,8 @@ export const products = [
       }
     ],
     "detailsProcess": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae vel illo dicta molestias accusantium? Eos corporis quam quibusdam quod temporibus nulla ab omnis eaque. Dicta eligendi libero possimus sapiente, ipsam, quidem necessitatibus magni, illum soluta perferendis natus! Modi et provident, possimus vero dolores quod sequi eaque! Rem cum dignissimos quod at, deleniti officiis, illum tempora qui fugiat, similique eaque doloribus.",
-    "category": "bread"
+    "category": "bread",
+    type: "bake"
   },
   {
     "itemName": "Кекс банановый",
@@ -258,7 +263,8 @@ export const products = [
         "amount": 50
       }
     ],
-    "category": "pie"
+    "category": "pie",
+    type: "pastry"
   },
   {
     "itemName": "Ромовая баба",
@@ -318,6 +324,7 @@ export const products = [
     },
     ],
     "category": "bread",
+    type: "bake",
     "detailsProcess" : `
       Высыпаем изюм в небольшую пиалу, заливаем его ромом и оставляем разбухать в течение 3 часов.
 
@@ -380,6 +387,7 @@ export const products = [
       }
     ],
     "category": "bread",
+    type: "bake",
     "detailsProcess" : `
     
     1. Начните готовить закваску. Положите в банку по 25 грамм ржаной и пшеничной муки и залейте 100 мл сока. Банку прикройте крышкой и оставьте при комнатной температуре на 48 часов. Через 24 часа перемешайте.
@@ -488,7 +496,8 @@ export const products = [
         "amount": 5,
       },
     ],
-    "category": "bread"
+    "category": "bread",
+    type: "bake",
   },
   {
     "itemName": "Шарлотка с яблоками",
@@ -512,7 +521,7 @@ export const products = [
       },
 
             {
-        name: "яблоки",
+        name: "яблоки свежие",
         amount: 400
       },
 
@@ -540,7 +549,8 @@ export const products = [
 
     ],
 
-    "category": "pie"
+    "category": "pie",
+    type: "bake",
   },
   {
     "itemName": "Баноффи пай",
@@ -652,13 +662,15 @@ export const products = [
 
 Дайте десерту постоять пару часов в холодильнике.
   `,
-    "category": "pie"
+    "category": "pie",
+    type: "pastry",
   },
   {
     "itemName": "Лимонный тарт",
     "description": "Прекрасный лимонный пирог",
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-JcRBR1IlMwl2UIAN9p9e0tQiIMQF_fEjGk130Kkz6nY7bRQ6roDdi-rVG-wWjn3IKCM&usqp=CAU",
     "id": 11,
+    type: "pastry",
     "ingredients" : [
       {
         addIng: "Основа: "
@@ -786,7 +798,8 @@ export const products = [
 Острием ножа провести по стенкам, отделяя чизкейк от бортиков формы. Поместить чизкейк в форме в холодильник на несколько часов (на ночь). Затем аккуратно снять форму и можно чизкейк подавать.
     `,
 
-    "category": "pie"
+    "category": "pie",
+    type: "pastry",
   },
 
   {
@@ -853,7 +866,8 @@ export const products = [
 Готовый брауни можно декорировать какао и элементами шоколада. Так как у меня не было времени на декор, я взяла готовый плиточный шоколад, растопила его несколькими ложками молока и вылила поверх брауни.
 
     `,
-    "category": "pie"
+    "category": "pie",
+    type: "pastry"
   },
   {
     "itemName": "Тыквенный пирог",
@@ -893,7 +907,8 @@ export const products = [
 
 4) Выложить тыквенное пюре в глубокую миску, взбить с двумя яйцами, сахаром, сливками, пряностями и солью. Вылить смесь в форму с запеченным тестом. Выпекать пирог 50–55 минут при 180 градусах. Когда пирог остынет, его можно смело разрезать на порции.
     `,
-    "category": "pie"
+    "category": "pie",
+    type: "bake"
   },
 
 
@@ -941,7 +956,8 @@ export const products = [
         amount: 200
       },
     ],
-    category: "pie"
+    category: "pie",
+    type: "bake"
   },
 
   {
@@ -985,6 +1001,7 @@ export const products = [
       }, 
     ],
     category: "pie",
+    type: "bake",
     detailsProcess: `Настоящие английские маффины напоминают, скорее, плоскую лепешку, чем кекс. Перед подачей на стол маффин поджаривают на открытом огне.
     
 К концу XIX в. технология приготовления маффинов претерпела изменения: появились кольца  «Маффин-рингс», которые выкладывались на противни для того, чтобы добиться гладкости краев лепешек.
@@ -1014,7 +1031,7 @@ export const products = [
 
       {
         name:"мука пшеничная В/С",
-        amount: 430
+        amount: 550
       }, 
 
       {
@@ -1070,7 +1087,7 @@ export const products = [
 
       {
         name:"мак молотый",
-        amount: 125
+        amount: 200
       }, 
 
       {
@@ -1084,6 +1101,7 @@ export const products = [
       }, 
     ],
     category: "pie",
+    type: "bake",
     detailsProcess: `
 
     нет данных
@@ -1097,6 +1115,8 @@ export const products = [
     image: "https://avatars.dzeninfra.ru/get-zen_doc/3765046/pub_601c125eb426f776c0c6103a_6048d0feb101ae42d66cca2c/scale_1200",
     id: 18,
     category: "pie",
+    type: "pastry",
+    ingredients: [],
     detailsProcess: "not data",
 
   },
@@ -1107,6 +1127,7 @@ export const products = [
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-sjcY0Xxl5cZpehOIT4n6p047poRM7WinwtqGHuWimzCjn33WwrNUi-YCCi_wlnS_j-E&usqp=CAU",
     id: 19,
     category: "pie",
+    type: "pastry",
     detailsProcess: "not data",
     ingredients: [
       {
@@ -1175,6 +1196,7 @@ export const products = [
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnJ98tnQPRt5VWSJuvM-x_hJsW2yGDBmnL367pPERR7_PXPB71AcrzHkSl78vdzN2ZfxE&usqp=CAU",
     id: 20,
     category: "pie",
+    type: "pastry",
     detailsProcess: "nope datas yet",
     ingredients: [
       {
@@ -1182,27 +1204,27 @@ export const products = [
       },
       {
         name: "масло слив. 72% (замороженное)",
-        amount: 400
+        amount: 300
       },
 
       {
         name: "мука пш.",
-        amount: 800
+        amount: 600
       },
 
       {
         name: "яйцо",
-        amount: 2
+        amount: 70
       },
 
       {
         name: "молоко",
-        amount: 180
+        amount: 120
       },
 
       {
         name: "сметана",
-        amount: 100
+        amount: 70
       },
 
      
@@ -1224,7 +1246,7 @@ export const products = [
 
       {
         name: "яйцо",
-        amount: 3
+        amount: 150
       },
 
       {
@@ -1250,6 +1272,7 @@ export const products = [
     image: "https://calorizator.ru/sites/default/files/imagecache/product_512/product/cake-1.jpg",
     id: 21,
     category: "pie",
+    type: "pastry",
     detailsProcess: "not data",
     ingredients: [
       {
@@ -1281,6 +1304,11 @@ export const products = [
         amount: 5
       },
 
+      {
+        name: "мука пш.",
+        amount: 600
+      },
+
      
 
     ],
@@ -1308,9 +1336,10 @@ export const products = [
 
   {
     "itemName": "Вишневый тарт",
-    "description": "Прекрасный лимонный пирог",
+    "description": "Прекрасный вишневый пирог",
     "image": "https://ufapirog.ru/image/cache/catalog/tartvishnjavbelomshokolade-1080x720.jpg",
     "id": 22,
+    type: "pastry",
     "ingredients" : [
       {
         addIng: "Основа: "
@@ -1371,6 +1400,7 @@ export const products = [
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRztvdbm6uK1-GVvwE5spPwYcHagEymKuZStew061VYcfGDauIEXfoQLn9_CAsevm8bPww&usqp=CAU",
     id: 23,
     category: "bread",
+    type: "bake",
     detailsProcess: "not data yet",
     ingredients: [
       {
@@ -1428,6 +1458,7 @@ export const products = [
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAh68CE_KJDMUQFxtiKDojmkZKzfp70WuYtiQhIaEaYNVkk7BlMg0ZmAqc4xmo0ilZwgk&usqp=CAU",
     id: 24,
     category: "pie",
+    type: "bake",
     detailsProcess: "not yet data",
     ingredients: [
       {

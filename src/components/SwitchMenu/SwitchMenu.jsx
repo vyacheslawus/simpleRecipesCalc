@@ -53,29 +53,31 @@ export default function SwitchMenu({ recipe, setRecipe }) {
             Все рецепты
           </button>
 
-        <button id="pie" className={activePie ? "switch-menu-button menu-button-active" : "switch-menu-button"} onClick={(e) => {
-            switchColorFunction(e)
-            setTimeout(() => {
-
-              setRecipe(products.filter(chunk => {
-                return (chunk.category === "bread")
-              }))
-
-            }, 200)
-       
-  }} > Хлеб и выпечка</button>
+  
   
         <button id="bread" className={activeBread ? "switch-menu-button menu-button-active" : "switch-menu-button"} onClick={(e) => {
             switchColorFunction(e)
             setTimeout(() => {
 
               setRecipe(products.filter(chunk => {
-                return (chunk.category === "pie")
+                return (chunk.type === "pastry")
               }))
 
             }, 200) 
   
           }} > Кондитерские изделия </button>
+
+<button id="pie" className={activePie ? "switch-menu-button menu-button-active" : "switch-menu-button"} onClick={(e) => {
+            switchColorFunction(e)
+            setTimeout(() => {
+
+              setRecipe(products.filter(chunk => {
+                return (chunk.type === "bake")
+              }))
+
+            }, 200)
+       
+  }} > Хлеб и выпечка</button>
 
  
 

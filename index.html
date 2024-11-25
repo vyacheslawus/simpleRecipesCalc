@@ -5,7 +5,8 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vite + React</title>
+  
+  <title>portable bake calc</title>
 
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,7 +14,41 @@
 <link
   href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=El+Messiri:wght@400..700&family=Geo:ital@0;1&family=PT+Mono&family=Zen+Kurenaido&display=swap"
   rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
+
+<style>
+  #slider{
+     margin-top: 20px;
+  }
+  .swiper {
+     max-width: 600px;
+     margin: 0 auto;
+  }
+
+  .swiper-wrapper {
+    color: red;
+  }
+
+  .swiper-slide {
+     height: 400px;
+     background-color: #ccc;
+     display: grid;
+     place-content: center;
+  }
+
+  .swiper-pagination-bullet {
+     width: 16px;
+     height: 16px;
+     background: #fff;
+     opacity: 1;
+  }
+  .swiper-pagination-bullet-active{
+     background: #000;
+  }
+</style>
+
+
 
 <body>
   <div class="modal"></div>
@@ -21,4 +56,16 @@
   <script type="module" src="/src/main.jsx"></script>
 </body>
 
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+   const swiper = new Swiper('.swiper', {
+      autoplay:true,
+      loop: true,
+      pagination: {
+         el: '.swiper-pagination',
+         clickable: true,
+      },
+   });
+</script>
 </html>
